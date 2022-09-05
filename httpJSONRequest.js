@@ -1,6 +1,6 @@
 const http = require('http');
 
-function httpJSONRequest(method, url, body = null) {
+const httpJSONRequest = (method, url, body = null) => {
         /* 
         This function is adapted from:
         https://stackoverflow.com/questions/38533580/nodejs-how-to-promisify-http-request-reject-got-called-two-times
