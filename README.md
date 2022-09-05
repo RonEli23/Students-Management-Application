@@ -19,7 +19,7 @@ npm run start
 | Name | Description |
 | ------------------------ | --------------------------------------------------------------------------------------------- | 
 | **client_input**         |  Prepared input files for the client app usage                                                |
-| **curl_test**            |  Contains 2 repositories for different run modes – JSON/HTML                                  |
+| **curl_test**            |  Contains 2 repositories for different run modes – JSON/HTML                                  
 Each repository includes input files for CURL usage.                                                                       | 
 | **node_modules**         | Contains the installed packages: express, mongoose, pug, dotenv and the devDependencies: eslint and readme-md-generator                                                                                                        |
 | **src**                  | Contains the source code                                                                      |
