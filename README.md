@@ -1,29 +1,20 @@
-# Foobar
+# Students Management Application
 
-Foobar is a Python library for dealing with word pluralization.
+This project represents a student management application designed by CRUD philosophy. It can execute several actions against the DB – add, retrieve, update, and delete student details.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
 ```bash
-pip install foobar
+npm install
 ```
 
 ## Usage
 
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+```bash
+npm run start
 ```
+
+## Project Components
 
 | Name | Description |
 | ------------------------ | --------------------------------------------------------------------------------------------- | 
@@ -42,10 +33,32 @@ foobar.singularize('phenomena')
 | .eslintrc                | Config settings for ESLint code style checking                                                |
 | .eslintignore            | Config settings for paths to exclude from linting                                             |
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+## Author
 
-Please make sure to update tests as appropriate.
+👤 **Shai Geffen**
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+* Github: [@shai987](https://github.com/shai987)
+* LinkedIn: [@Shai Geffen](https://linkedin.com/in/shai-geffen-24373721a)
+
+👤 **Ron Eli**
+
+* Github: [@ron](https://github.com/)
+* LinkedIn: [@Ron Eli](https://linkedin.com/in/ron-eli-ba47a9226)
+
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+Feel free to check [issues page](https://github.com/shai987/Students-Management-Application/issues).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2022 [Shai Geffen & Ron Eli](https://github.com/shai987).
+This project is [MIT](https://github.com/shai987/Students-Management-Application/blob/master/LICENSE) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
