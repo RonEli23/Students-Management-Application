@@ -48,8 +48,7 @@ npm run start
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
-Feel free to check [issues page](https://github.com/shai987/Students-Management-Application/issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/shai987/Students-Management-Application/issues).
 
 ## Show your support
 
@@ -57,7 +56,7 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2022 [Shai Geffen & Ron Eli](https://github.com/shai987).
+Copyright © 2022 [Shai Geffen & Ron Eli](https://github.com/shai987).<br />
 This project is [MIT](https://github.com/shai987/Students-Management-Application/blob/master/LICENSE) licensed.
 
 ***
