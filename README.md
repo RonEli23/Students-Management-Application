@@ -18,20 +18,24 @@ npm run start
 
 | Name | Description |
 | ------------------------ | --------------------------------------------------------------------------------------------- | 
+| **client_input**         |  Prepared input files for the client app usage                                                |
+| **curl_test**            |  Contains 2 repositories for different run modes – JSON/HTML                                  |
+Each repository includes input files for CURL usage.                                                                       | 
 | **node_modules**         | Contains the installed packages: express, mongoose, pug, dotenv and the devDependencies: eslint and readme-md-generator                                                                                                        |
 | **src**                  | Contains the source code                                                                      |
-| **src/models**           | Includes student model file and log model file                                                |
-| **src/public**           | Includes the main CSS file                                                                    |
-| **views**                | Views define how your app renders on the client. In this case we're using pug                 |
-| .env.example             | API keys, tokens, passwords, database URI. Clone this, but don't check it in to public repos. |
-| .travis.yml              | Used to configure Travis CI build                                                             |
-| .copyStaticAssets.ts     | Build script that copies images, fonts, and JS libs to the dist folder                        |
-| jest.config.js           | Used to configure Jest running tests written in TypeScript                                    |
-| package.json             | File that contains npm dependencies as well as [build scripts]                                |
-| tsconfig.json            | Config settings for compiling server code written in TypeScript                               |
-| tsconfig.tests.json      | Config settings for compiling tests written in TypeScript                                     |
-| .eslintrc                | Config settings for ESLint code style checking                                                |
-| .eslintignore            | Config settings for paths to exclude from linting                                             |
+| **src/models**           | Contains student model file and log model file                                                |
+| **src/public**           | Contains the main CSS file and 404 error file                                                 |
+| **src/routes**           | Contains the router file (the response for every path and method)                             |
+| **views**                | Contains all Pug files (responsible for the HTML template)                                    |
+| .env.example             | Contains my environment variables                                                             |
+| .eslintrc.js             | Config settings for ESLint to checks code integrity                                           |
+| .gitignore               | Config settings for my git repository that tells git not to track certain files and folders that
+i don't want being uploaded to my main repository                                                                                             
+| package.json             | File that contains metadata relevant to the project and it is used for managing the project's dependencies,
+scripts, version and more  |                                                                                               |
+| .server.js               | The main file and the starting point of the server application                                |
+| .client.js               | The main file of the client application                                                       |
+| .httpJSONRequest.js      |                                                                                               |                
 
 ## Author
 
