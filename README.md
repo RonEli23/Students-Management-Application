@@ -4,8 +4,8 @@ This project represents a student management application designed by CRUD philos
 
 ## Features 
 • Management of two main DBs: 
-1. DB for the student management app
-2. DB that documents every path and method that have been used by the client (activated automatically).
+  a. DB for the student management app
+  b. DB that documents every path and method that have been used by the client (activated automatically).
 • Two optional run modes: HTML & JSON 
 • Client application (only in JSON mode) – this app reads a provided text file which include one of the CRUD commands. Then the app commits the specific command.
 
