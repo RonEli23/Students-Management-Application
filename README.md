@@ -30,9 +30,9 @@ npm run start
 | .eslintrc.js             | Config settings for ESLint to checks code integrity                                           |
 | .gitignore               | Config settings for my git repository that tells git not to track certain files and folders that i don't want being uploaded to my main repository.    |                                                                                             
 | package.json             | File that contains metadata relevant to the project and it is used for managing the project's dependencies, scripts, version and more.  |                                                                                               |
-| .server.js               | The main file and the starting point of the server application                                |
-| .client.js               | The main file of the client application                                                       |
-| .httpJSONRequest.js      | JS file that work with any type of HTTP request. Work in JSON mode only and receieve only JSON strings (not buffers) and return only the body (the payload) and not the HTTP headers.                                                           |        
+| server.js               | The main file and the starting point of the server application                                |
+| client.js               | The main file of the client application                                                       |
+| httpJSONRequest.js      | JS file that work with any type of HTTP request. Work in JSON mode only and receieve only JSON strings (not buffers) and return only the body (the payload) and not the HTTP headers.                                                           |        
 
 ## Author
 
