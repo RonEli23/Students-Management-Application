@@ -10,9 +10,16 @@ npm install
 
 ## Usage
 
+Run mode HTML:
 ```bash
 npm run start
 ```
+Run mode JSON:
+```bash
+npm start [--json]
+```
+Note: in order to activate the client app you must run "node client.js" in separate terminal.
+
 
 ## Project Components
 
