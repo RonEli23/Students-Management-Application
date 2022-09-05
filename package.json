@@ -26,7 +26,6 @@
     "pug": "^3.0.2"
   },
   "devDependencies": {
-    "eslint": "^8.23.0",
-    "readme-md-generator": "^1.0.0"
+    "eslint": "^8.23.0"
   }
 }

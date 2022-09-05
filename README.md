@@ -34,7 +34,7 @@ Note: in order to activate the client app you must run "node client.js" in separ
 | ------------------------ | --------------------------------------------------------------------------------------------- | 
 | **client_input**         |  Prepared input files for the client app usage.                                               |
 | **curl_test**            |  Contains 2 repositories for different run modes – JSON/HTML Each repository includes input files for CURL   usage.                                                                       | 
-| **node_modules**         | Contains the installed packages: express, mongoose, pug, dotenv and the devDependencies: eslint and readme-md-generator                                                                                                        |
+| **node_modules**         | Contains the installed packages: express, mongoose, pug, dotenv and the devDependencies: eslint                                                                                                       |
 | **src**                  | Contains the source code                                                                      |
 | **src/models**           | Contains student model file and log model file                                                |
 | **src/public**           | Contains the main CSS file and 404 error file                                                 |
