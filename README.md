@@ -41,6 +41,12 @@ npm run test
 * Github: [@shai987](https://github.com/shai987)
 * LinkedIn: [@Shai Geffen](https://linkedin.com/in/shai-geffen-24373721a)
 
+👤 **Ron Eli**
+
+* Github: [@ron](https://github.com/)
+* LinkedIn: [@Ron Eli](https://linkedin.com/in/ron-eli-ba47a9226)
+
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/shai987/Students-Management-Application/issues). You can also take a look at the [contributing guide](https://github.com/shai987/Students-Management-Application/blob/master/CONTRIBUTING.md).
