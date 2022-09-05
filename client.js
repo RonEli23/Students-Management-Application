@@ -210,4 +210,5 @@ const processLineByLine = async (file_name) => {
 
 // For this app. to work, here you should call processLineByLine(..)
 // and give it the name of the input file
+// and in the terminal you should write the filename fron the client_input
 processLineByLine(fileName);
