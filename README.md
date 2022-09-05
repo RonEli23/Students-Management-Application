@@ -39,7 +39,7 @@ npm run test
 👤 **Shai Geffen & Ron Eli**
 
 * Github: [@shai987](https://github.com/shai987)
-* LinkedIn: [@Shai Geffen ](https://linkedin.com/in/shai-geffen )
+* LinkedIn: [@Shai Geffen](https://linkedin.com/in/shai-geffen)
 
 ## 🤝 Contributing
 
