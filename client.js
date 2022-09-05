@@ -211,4 +211,13 @@ const processLineByLine = async (file_name) => {
 // For this app. to work, here you should call processLineByLine(..)
 // and give it the name of the input file
 // and in the terminal you should write the filename fron the client_input
-processLineByLine(fileName);
+
+try {
+        // We used fs.stat() to chech if the given file is exists
+        fs.stat(fileName, (err) => {
+                !err ? processLineByLine(fileName) : console.log(`File does not exist ${err.path}`);
+        });
+}
+catch (err) {
+        console.log(err.message);
+}
