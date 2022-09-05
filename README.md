@@ -1,64 +1,56 @@
-<h1 align="center">Welcome to students-management-application 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/shai987/Students-Management-Application#readme" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
-  <a href="https://github.com/shai987/Students-Management-Application/graphs/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
-  </a>
-  <a href="https://github.com/shai987/Students-Management-Application/blob/master/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/shai987/students-management-application" />
-  </a>
-</p>
+# Foobar
 
-> This project represents a student management application designed by CRUD philosophy. It can execute several actions against the DB – add, retrieve, update, and delete student details.
+Foobar is a Python library for dealing with word pluralization.
 
-### 🏠 [Homepage](https://github.com/shai987/Students-Management-Application#readme)
+## Installation
 
-## Install
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
-```sh
-npm install
+```bash
+pip install foobar
 ```
 
 ## Usage
 
-```sh
-npm run start
+```python
+import foobar
+
+# returns 'words'
+foobar.pluralize('word')
+
+# returns 'geese'
+foobar.pluralize('goose')
+
+# returns 'phenomenon'
+foobar.singularize('phenomena')
 ```
 
-## Run tests
+| Name | Description |
+| ------------------------ | --------------------------------------------------------------------------------------------- | 
+| **node_modules**         | Contains the installed packages: express, mongoose, pug, dotenv and the devDependencies: eslint, readme-md-generator                                    |
+| **src**                  | Contains your source code that will be compiled to the dist dir                               |
+| **src/config**           | Passport authentication strategies and login middleware. Add other complex config code here   |
+| **src/controllers**      | Controllers define functions that respond to various http requests                            |
+| **src/models**           | Models define Mongoose schemas that will be used in storing and retrieving data from MongoDB  |
+| **src/public**           | Static assets that will be used client side                                                   |
+| **src/types**            |  dsa                                                                                          |
+| **src**/server.ts        | Entry point to your express app                                                               |
+| **test**                 | Contains your tests. Separate from source because there is a different build process.         |
+| **views**                | Views define how your app renders on the client. In this case we're using pug                 |
+| .env.example             | API keys, tokens, passwords, database URI. Clone this, but don't check it in to public repos. |
+| .travis.yml              | Used to configure Travis CI build                                                             |
+| .copyStaticAssets.ts     | Build script that copies images, fonts, and JS libs to the dist folder                        |
+| jest.config.js           | Used to configure Jest running tests written in TypeScript                                    |
+| package.json             | File that contains npm dependencies as well as [build scripts]                                |
+| tsconfig.json            | Config settings for compiling server code written in TypeScript                               |
+| tsconfig.tests.json      | Config settings for compiling tests written in TypeScript                                     |
+| .eslintrc                | Config settings for ESLint code style checking                                                |
+| .eslintignore            | Config settings for paths to exclude from linting                                             |
 
-```sh
-npm run test
-```
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Author
+Please make sure to update tests as appropriate.
 
-👤 **Shai Geffen**
-
-* Github: [@shai987](https://github.com/shai987)
-* LinkedIn: [@Shai Geffen](https://linkedin.com/in/shai-geffen-24373721a)
-
-👤 **Ron Eli**
-
-* Github: [@ron](https://github.com/)
-* LinkedIn: [@Ron Eli](https://linkedin.com/in/ron-eli-ba47a9226)
-
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/shai987/Students-Management-Application/issues).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-## 📝 License
-
-Copyright © 2022 [Shai Geffen & Ron Eli](https://github.com/shai987).<br />
-This project is [MIT](https://github.com/shai987/Students-Management-Application/blob/master/LICENSE) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

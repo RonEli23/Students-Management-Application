@@ -10,8 +10,8 @@ const port = process.env.PORT || 8080;
 
 global.conn1 = mongoose.createConnection(uri_academy); //connection for academy DB usage
 global.conn2 = mongoose.createConnection(uri_log); //connection for academylog DB usage
-const { student_router } = require('./routes/student');
-const log_model = require('./models/log');
+const { student_router } = require('./src/routes/student');
+const log_model = require('./src/models/log');
 
 
 // Check the existed run mode
