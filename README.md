@@ -27,15 +27,10 @@ foobar.singularize('phenomena')
 
 | Name | Description |
 | ------------------------ | --------------------------------------------------------------------------------------------- | 
-| **node_modules**         | Contains the installed packages: express, mongoose, pug, dotenv and the devDependencies: eslint, readme-md-generator                                    |
-| **src**                  | Contains your source code that will be compiled to the dist dir                               |
-| **src/config**           | Passport authentication strategies and login middleware. Add other complex config code here   |
-| **src/controllers**      | Controllers define functions that respond to various http requests                            |
-| **src/models**           | Models define Mongoose schemas that will be used in storing and retrieving data from MongoDB  |
-| **src/public**           | Static assets that will be used client side                                                   |
-| **src/types**            |  dsa                                                                                          |
-| **src**/server.ts        | Entry point to your express app                                                               |
-| **test**                 | Contains your tests. Separate from source because there is a different build process.         |
+| **node_modules**         | Contains the installed packages: express, mongoose, pug, dotenv and the devDependencies: eslint and readme-md-generator                                                                                                        |
+| **src**                  | Contains the source code                                                                      |
+| **src/models**           | Includes student model file and log model file                                                |
+| **src/public**           | Includes the main CSS file                                                                    |
 | **views**                | Views define how your app renders on the client. In this case we're using pug                 |
 | .env.example             | API keys, tokens, passwords, database URI. Clone this, but don't check it in to public repos. |
 | .travis.yml              | Used to configure Travis CI build                                                             |

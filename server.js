@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(express.json());
 
-app.use(express.static('public'));
+app.use(express.static('./src/public'));
 
 app.set('view engine', 'pug');
 
@@ -43,16 +43,11 @@ app.use('/student', student_router);
 
 app.use((req, res) => {
         if (global.runmode == "HTML") {
-                //res.status(404).send('Illegal path');
-
-                // insted of regular message (send("")) we concatenate render('404') to res.status(404)
                 res.status(404).render('404');
-
         }
         // JSON mode
         else {
                 res.status(404).json("FAILED");
-                // res.status(404).json({ error: 'FAILED' });
         }
 });
 
