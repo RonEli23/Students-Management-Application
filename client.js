@@ -3,6 +3,8 @@ const readline = require('readline');
 const httpJSONRequest = require('./httpJSONRequest');
 const internal_storage = {};
 const port = process.env.PORT || 8080;
+// We will receive the name of the file using argv[2] and pass it into the function processLineByLine()
+const fileName = process.argv[2];
 
 const processLineByLine = async (file_name) => {
         const rs = fs.createReadStream(file_name);
@@ -208,26 +210,4 @@ const processLineByLine = async (file_name) => {
 
 // For this app. to work, here you should call processLineByLine(..)
 // and give it the name of the input file
-
-// Default command
-processLineByLine('./client_input/add_students.txt');
-
-// Get according to the option - expected_saveas_names
-// processLineByLine('./client_input/add_get_students.txt');
-
-// Get according to the option - expected_num_docuemnts
-// processLineByLine('./client_input/get_num_documents.txt');
-
-// Get according to the option - {} (empty object)
-// processLineByLine('./client_input/getAll.txt');
-
-// processLineByLine('./client_input/add_update_student.txt');
-
-// processLineByLine('./client_input/add_course.txt');
-
-// processLineByLine('./client_input/add_delete_student.txt');
-
-// processLineByLine('./client_input/delAll.txt');
-
-// processLineByLine('./client_input/all_commands.txt');
-
+processLineByLine(fileName);
