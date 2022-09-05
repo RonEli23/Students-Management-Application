@@ -28,8 +28,7 @@ npm run start
 | **views**                | Contains all Pug files (responsible for the HTML template)                                    |
 | .env.example             | Contains my environment variables                                                             |
 | .eslintrc.js             | Config settings for ESLint to checks code integrity                                           |
-| .gitignore               | Config settings for my git repository that tells git not to track certain files and folders that
-i don't want being uploaded to my main repository |                                                                                             
+| .gitignore               | Config settings for my git repository that tells git not to track certain files and folders that i don't want being uploaded to my main repository    |                                                                                             
 | package.json             | File that contains metadata relevant to the project and it is used for managing the project's dependencies,
 scripts, version and more  |                                                                                               |
 | .server.js               | The main file and the starting point of the server application                                |
