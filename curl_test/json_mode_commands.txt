@@ -1,0 +1,17 @@
+get students
+curl -H "Content-Type: application/json" http://localhost:8080/student?toar=ba
+
+add student
+curl -H "Content-Type: application/json" -d @addStudent.json http://localhost:8080/student/add
+
+update student
+curl -H "Content-Type: application/json" -d @updateStudent.json http://localhost:8080/student/update/6309eef56ad29aea5552e471
+
+add course
+curl -H "Content-Type: application/json" -d @addCourse.json http://localhost:8080/student/update/6309eef56ad29aea5552e471/addcourse
+
+delete student 
+curl http://localhost:8080/student/delete/6309eef56ad29aea5552e471 -X POST
+
+delete all students
+curl http://localhost:8080/student/deleteall -X POST

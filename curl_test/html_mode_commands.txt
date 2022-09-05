@@ -1,0 +1,17 @@
+get students
+curl http://localhost:8080/student?toar=ba
+
+add student
+curl -d @addStudent.txt http://localhost:8080/student/add
+
+update student
+curl -d @updateStudent.txt http://localhost:8080/student/update/6309f4737b32dfd93c8cde52
+
+add course
+curl -d @addCourse.txt http://localhost:8080/student/update/6309f4737b32dfd93c8cde52/addcourse
+
+delete student 
+curl http://localhost:8080/student/delete/6309f4737b32dfd93c8cde52 -X POST
+
+delete all students 
+curl http://localhost:8080/student/deleteall -X POST

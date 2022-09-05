@@ -1,0 +1,4 @@
+add_student {"id":"111111123","toar":"ma","city":"TLV","name":"Anat"} saveas st1
+add_student {"id":"111111122","toar":"ma","city":"TLV","name":"Anat"} saveas st2
+add_student {"id":"111111125","toar":"ba","city":"TLV","name":"Anat"} saveas st3
+get_students {"toar":"ma"} expected_saveas_names ["st1","st2"]

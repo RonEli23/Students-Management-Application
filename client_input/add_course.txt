@@ -1,0 +1,2 @@
+add_student {"id":"111111123","toar":"ma","city":"TLV","name":"shai"} saveas st1
+add_course st1 {"cid":"35000","grade":85}

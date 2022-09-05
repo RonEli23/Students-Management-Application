@@ -1,0 +1,2 @@
+add_student {"id":"111111123","toar":"ba","city":"TLV","name":"Anat"} saveas st1
+update_student st1 {"toar":"phd"}

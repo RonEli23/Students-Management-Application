@@ -1,0 +1,56 @@
+doctype html
+html(dir="ltr" lang="en")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/main.css')
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap")
+    title Get Students
+  body
+    header 
+      h1 WELCOME! 
+    div.form-style-2.container
+      div.form-style-2-heading Filter the results
+      form(method='GET')
+          label(for="toar")
+            span Toar:
+          select(name="toar" class="select-field" id="toar" value="--ALL--")
+            option(value="all") --ALL--
+            option(value="ba", selected = toar!="ba" ? false : true) BA
+            option(value="ma", selected = toar!="ma" ? false : true) MA
+            option(value="phd", selected = toar!="phd" ? false : true) PHD
+          br
+          br        
+          label(for="city")
+            span City: 
+            input(type="text", id="city", name="city", value=city, class="input-field")
+          label(for="avg")
+            span.min_avg min_avg_grade:
+            input(type="number", id="avg", name="avg", value=avg,class="avg-field")
+          br 
+          input(type="submit", value="Filter", class='btn')
+          br
+          br  
+
+    if message 
+      p #{message}
+    else if !flag
+      table
+        tr 
+          th Id 
+          th Name 
+          th Delete
+          th Update
+        each student in students
+          tr 
+            td #{student.id} 
+            td #{student.name}
+            td 
+              form(method="POST", action=`${baseUrl}/delete/${student._id}`, onsubmit=`return confirm('Do you really want to delete the student ${student.name}?')`)
+                input(type="submit", value="delete")
+            td 
+              form(method="GET", action=`${baseUrl}/update/${student._id}`)
+                input(type="submit", value="update")        
+    div.link
+      a(href='/student/add') Add a student

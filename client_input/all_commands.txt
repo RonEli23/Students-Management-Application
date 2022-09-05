@@ -1,0 +1,14 @@
+add_student {"id":"111111123","toar":"ba","city":"TLV","name":"Anat"} saveas st1
+add_student {"id":"111111122","toar":"ba","city":"TLV","name":"Anat"} saveas st2
+add_student {"id":"111111125","toar":"ba","city":"TLV","name":"Anat"} saveas st3
+add_student {"id":"111111999","toar":"ma","city":"TLV","name":"Anat"} saveas st4
+add_student {"id":"111111929","toar":"ma","city":"TLV","name":"Anat"} saveas st5
+add_student {"id":"111111919","toar":"phd","city":"TLV","name":"Anat"} saveas st6
+add_student {"id":"111111939","toar":"phd","city":"TLV","name":"Anat"} saveas st7
+del_student st1
+del_student st8
+get_students {"toar":"ba"} expected_saveas_names ["st3","st2"]
+update_student st3 {"toar":"phd"}
+update_student st4 {"toar":"ph"}
+get_students {"toar":"ma"} expected_num_docuemnts 2
+add_course st6 {"cid":"35000","grade":85}

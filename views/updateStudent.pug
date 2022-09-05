@@ -1,0 +1,68 @@
+doctype html
+html(dir="ltr" lang="en")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/main.css')
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap")
+    title Update Student
+  body
+  header 
+      h1 Update student details 
+  div.form-style-2.container
+    div.form-style-2-heading Update your information
+    form(method='POST')
+      label(for="id") 
+        span Id:
+        input(type="text", id="id", name="id", value=student.id,class="input-field", disabled)    
+      br   
+      label(for="name") 
+        span Name:
+        input(type="text", id="name", name="name", value=student.name,class="input-field", required)
+      br 
+      label(for="city") 
+        span City:
+        input(type="text", id="city", name="city", value=student.city,class="input-field", required)
+      br
+      label(for="toar") 
+        span Toar:
+      select(name="toar" id="toar" value=toar,class="select-field", required)
+        option(value="ba", selected = student.toar!="ba" ? false : true) BA
+        option(value="ma", selected = student.toar!="ma" ? false : true) MA
+        option(value="phd", selected = student.toar!="phd" ? false : true) PHD     
+      br
+      br
+      input(type="submit", value="Update student", class='btn')
+    p #{text}
+    hr
+    h2 Courses list: 
+    div.courses_list
+      if student.courses.length > 0
+        table
+          tr 
+            th course
+            th grade
+          each course in student.courses
+            tr 
+              td #{course.cid} 
+              td #{course.grade}
+      else
+        p Courses list is empty!
+    hr
+    form(method='POST', action = `${baseUrl}/update/${student._id}/addcourse`)
+      label(for="cid") 
+        span Course Id:
+        input(type="text", id="cid", name="cid", minlength=5, maxlength=5, class="input-field", required)    
+      br   
+      label(for="grade") 
+        span Grade:
+        input(type="number", id="grade", name="grade", min=0, max=100,class="input-field",required)
+      br
+      br 
+      input(type="submit", value="Add course", class='btn')
+      br
+    p #{text}
+
+  div.link
+    a(href='/student') Students List 

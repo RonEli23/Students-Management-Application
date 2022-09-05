@@ -1,0 +1,44 @@
+doctype html
+html(dir="ltr" lang="en")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/main.css')
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap")
+    title Add Student
+  body
+  header 
+      h1 Add student
+  div.form-style-2.container
+    div.form-style-2-heading Provide your information
+    form(method='POST')
+      label(for="id")
+        span Id:
+      input(type="text", id="id", name="id", minlength=9, maxlength=9, value=id, class="input-field", required)    
+      br   
+      label(for="name")
+        span Name:
+      input(type="text", id="name", name="name", value=name, class="input-field", required)
+      br 
+      label(for="city")
+        span City:
+      input(type="text", id="city", name="city", value=city, class="input-field", required)
+      br
+      label(for="toar")
+        span Toar:
+      select(name="toar" class="select-field" id="toar" required)
+        option(value="ba", selected = toar!="ba" ? false : true) BA 
+        option(value="ma", selected = toar!="ma" ? false : true) MA
+        option(value="phd", selected = toar!="phd" ? false : true) PHD     
+      br
+      br 
+      input(type="submit", value="Add student", class='btn')
+
+  p #{text}
+  br
+  br
+  div.link 
+    a(href='/student') Students List 
+
+
