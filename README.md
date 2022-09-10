@@ -57,7 +57,7 @@ Note: in order to activate the client app you must run "node client.js" in separ
 
 👤 **Ron Eli**
 
-* Github: [@roneli23](https://github.com/ron)
+* Github: [@roneli23](https://github.com)
 * LinkedIn: [@Ron Eli](https://linkedin.com/in/ron-eli-ba47a9226)
 
 
