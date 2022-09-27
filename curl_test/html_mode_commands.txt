@@ -1,3 +1,6 @@
+path directory
+cd curl_test/html_mode
+
 get students
 curl http://localhost:8080/student?toar=ba
 

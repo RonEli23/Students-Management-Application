@@ -27,7 +27,7 @@ html(dir="ltr" lang="en")
             input(type="text", id="city", name="city", value=city, class="input-field")
           label(for="avg")
             span.min_avg min_avg_grade:
-            input(type="number", id="avg", name="avg", value=avg,class="avg-field")
+            input(type="number", id="avg", name="avg", value=avg, min=0, max=100, class="avg-field")
           br 
           input(type="submit", value="Filter", class='btn')
           br

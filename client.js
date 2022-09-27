@@ -81,7 +81,7 @@ const processLineByLine = async (file_name) => {
                                         const url = `http://localhost:${port}/student?${query}`;
                                         const res = await httpJSONRequest(method, url);
                                         if (res == "FAILED") {
-                                                console.log("***something went wrong");
+                                                console.log("***Something went wrong");
                                                 break;
                                         }
                                         else {
@@ -92,6 +92,7 @@ const processLineByLine = async (file_name) => {
                                                         let var2Arr = var2; // Creating a duplicate object. 
                                                         var2Arr = JSON.parse(var2Arr); // Now we parse it to JS object
                                                         // Check if the the server's objects list has the same length as the client's list
+                                                        let flag = false;
                                                         if (res.length === var2Arr.length) {
                                                                 for (let i = 0; i < res.length; i++) {
                                                                         // Check if every item in the server list has an equal item in the client list
@@ -101,26 +102,32 @@ const processLineByLine = async (file_name) => {
                                                                                 continue;
                                                                         }
                                                                         // If no object was found finish the loop
+                                                                        flag = true;
                                                                         break;
                                                                 }
-                                                                console.log("success");
-                                                                console.log(res);
+                                                                if (flag) {
+                                                                        console.log("***One of the ids found wrong");
+                                                                }
+                                                                else {
+                                                                        console.log("Success");
+                                                                        console.log(res);
+                                                                }
                                                         }
                                                         else {
-                                                                console.log("***one of the ids found wrong");
+                                                                console.log("***Discrepancy between DB returned results and 'expected_saveas_names' array");
                                                         }
                                                         break;
                                                 }
-                                                // In this section the number of objects that were retreived by the server will compare to the client expected number of docuemnts  
-                                                else if (var1 === "expected_num_docuemnts" && !isNaN(var2)) {
+                                                // In this section the number of objects that were retreived by the server will compare to the client expected number of documents  
+                                                else if (var1 === "expected_num_documents" && !isNaN(var2)) {
 
                                                         // Check if the the server's objects list has the same length as the client's number (number of expected documents)
                                                         if (res.length == var2) {
-                                                                console.log("success");
+                                                                console.log("Success");
                                                                 console.log(res);
                                                         }
                                                         else {
-                                                                console.log("***wrong ids number was received");
+                                                                console.log("***Wrong ids number was received");
                                                         }
 
                                                         break;
@@ -131,7 +138,7 @@ const processLineByLine = async (file_name) => {
                                                 }
                                                 // None of the previous options were appered
                                                 else {
-                                                        console.log("***wrong command");
+                                                        console.log("***Wrong command");
                                                 }
                                         }
                                 }

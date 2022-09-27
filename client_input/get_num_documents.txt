@@ -1,1 +1,1 @@
-get_students {"toar":"ma"} expected_num_docuemnts 1
+get_students {"toar":"ma"} expected_num_documents 1

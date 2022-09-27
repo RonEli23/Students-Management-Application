@@ -1,3 +1,6 @@
+path directory
+cd curl_test/json_mode
+
 get students
 curl -H "Content-Type: application/json" http://localhost:8080/student?toar=ba
 

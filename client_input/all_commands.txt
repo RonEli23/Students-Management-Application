@@ -10,5 +10,5 @@ del_student st8
 get_students {"toar":"ba"} expected_saveas_names ["st3","st2"]
 update_student st3 {"toar":"phd"}
 update_student st4 {"toar":"ph"}
-get_students {"toar":"ma"} expected_num_docuemnts 2
+get_students {"toar":"ma"} expected_num_documents 2
 add_course st6 {"cid":"35000","grade":85}
