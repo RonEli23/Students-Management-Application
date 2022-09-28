@@ -161,6 +161,12 @@ a:hover {
         border: 1px solid #0C0;
 }
 
+.form-style-2 .input-field:invalid,
+.form-style-2 .select-field:invalid,
+.form-style-2 .avg-field:invalid {
+        border: none;
+        outline: 1px solid red;
+}
 
 .form-style-2 input[type=submit],
 .form-style-2 input[type=button] {

@@ -195,10 +195,10 @@ const processLineByLine = async (file_name) => {
                                         const method = 'post';
                                         const url = `http://localhost:${port}/student/delete/${the_doc_id}`;
                                         const res = await httpJSONRequest(method, url);
-                                        res === 1 ? console.log(res, "deletion succeed") : console.log(res, "***deletion failed");
+                                        res === 1 ? console.log(res, "Deletion succeed") : console.log(res, "***Deletion failed");
                                 }
                                 else {
-                                        console.log("***one of the tokens is missing or wrong");
+                                        console.log("***One of the tokens is missing or wrong");
                                 }
                                 break;
                         case 'del_all':
@@ -206,7 +206,6 @@ const processLineByLine = async (file_name) => {
                                 const method = 'post';
                                 const url = `http://localhost:${port}/student/deleteall`;
                                 const res = await httpJSONRequest(method, url);
-                                console.log("deletion succeed");
                                 console.log(res);
                                 break;
                         default:

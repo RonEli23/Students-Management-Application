@@ -1,12 +1,15 @@
 const mongoose = require('mongoose');
 
+// This function remove spaces from middle of a string
+const removeSpacesFromId = str => str.replace(/\s/g, '');
+
 const take_course_schema = new mongoose.Schema({
         cid: {
                 type: String,
                 required: [true, 'Course Id should not be empty'],
                 validate: {
                         validator: function (v) {
-                                return (v.trim().length == 5)
+                                return (v.trim().length == 5 && removeSpacesFromId(v).length == 5)
                         },
                         message: "The id must contains 5 digits!"
                 }
@@ -24,7 +27,7 @@ const student_schema = new mongoose.Schema({
                 required: [true, 'Id should not be empty'],
                 validate: {
                         validator: function (v) {
-                                return (v.trim().length == 9)
+                                return (v.trim().length == 9 && removeSpacesFromId(v).length == 9)
                         },
                         message: "The id must contains 9 digits!"
                 }
