@@ -84,8 +84,9 @@ router.post('/add', async (req, res) => {
         }
 
         if (error || flag) {
+                let errMessage = Object.values(error.errors).map(val => val.message);
                 if (global.runmode == "HTML") {
-                        res.render('addStudent', { id, name, city, toar, text: "Failed to add student" });
+                        res.render('addStudent', { id, name, city, toar, text: errMessage });
                         return;
                 }
                 // JSON mode
